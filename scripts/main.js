@@ -65,3 +65,45 @@ console.log(
   `You have ${yearsDiff} years left until you can retire. It's ${currentYear}, so you can retire in ${retirementYear}.`
 );
 */
+
+/*
+function reverseValue(input) {
+  const arrayInput = input.split("");
+  const reversedArray = arrayInput.reverse();
+  const joinedString = reversedArray.join("");
+  return joinedString;
+}
+
+console.log(reverseValue("Veerpal Kaur"));
+console.log(reverseValue("humber"));
+*/
+
+// Interview - Problem #1
+// Given a string, return the first non-repeating character in it and return its index. If it does not exist, return -1.
+
+/*
+function nonRepeatingChar(input) {
+  let foundChar;
+  const arrayInput = input.split("");
+  for (let i = 0; i < input.length; i++) {
+    if (!arrayInput.find(input[i])) {
+      foundChar = input[i];
+    }
+    return;
+  }
+  return foundChar;
+}
+*/
+
+// console.log(nonRepeatingChar("Veerpal"));
+// console.log(nonRepeatingChar("intelligence"));
+
+// Return a random item from the array
+function randomPick(array) {
+  const itemsCount = array.length;
+  const randomIndex = Math.floor(Math.random() * itemsCount);
+  const randomItem = array[randomIndex];
+  return randomItem;
+}
+
+console.log(randomPick([5, 7, 3, 9, 7, 34, 89, 25]));
